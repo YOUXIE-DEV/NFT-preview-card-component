@@ -1,0 +1,114 @@
+body{
+    display: grid;
+    background-color: hsl(217, 54%, 11%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    place-content: center;
+    font-family: sans-serif;
+}
+.CARD{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    border: 2px solid none;
+    border-radius: 10px;
+    height: auto;
+    max-width: 35ch;
+    padding: 1.5em;
+    box-shadow: 0px 0px 30px black;
+}
+.image{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.image img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.image_overlay{
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%,0.8);
+}
+.image_overlay img{
+    position: absolute;
+    width: 6ch;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.5rem;  
+}
+.desc{
+    color:hsl(215, 51%, 70%);
+    opacity: 70%;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding-top: 1em;
+}
+#ETH{
+    color: hsl(178, 100%, 50%);
+    text-align: left;
+}
+#time{
+    color:hsl(215, 51%, 70%);
+    text-align: right;
+}
+.desc,#ETH,#time{
+    font-weight: 400;
+}
+hr{
+    color: hsl(215, 32%, 27%);
+    size: 0;
+}
+.credit{
+    display: flex;
+    color: hsl(215, 51%, 70%);
+    font-size: 1.2rem;
+}
+#Wyvern{
+    border: 1px solid white;
+    border-radius: 20px;
+
+}
+#credit-txt{
+    position: relative;
+    margin-top: 0.7rem;
+    padding-left: 1em;
+}
+.credit a{
+    color: white;
+}
+.View{
+    display: none;
+}
+.image:hover .image_overlay{
+    display: block;
+    cursor: pointer;
+}
+.title:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.credit a:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.attribution{
+    color: white;
+}
